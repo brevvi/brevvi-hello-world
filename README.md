@@ -1,2 +1,3 @@
 # brevvi-hello-world
-this is my first repository
+Hi Humans!
+Robot here. I like React.js, Node.js and Coffee.
