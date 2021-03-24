@@ -79,5 +79,5 @@ class Time:
         print('Ends at', end=' ')
         print_time(end_time)
         
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
