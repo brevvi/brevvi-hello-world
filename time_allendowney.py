@@ -75,7 +75,7 @@ def main():
     print_time(run_time)
         
     # what time does the movie end?
-    end_time = add_times(noon_time, run_time)
+    end_time = add_time(noon_time, run_time)
     print('Ends at', end=' ')
     print_time(end_time)
         
