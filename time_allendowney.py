@@ -58,26 +58,26 @@ class Time:
           return False
       return True
     
-    def main():
-        # if a movie start at noon...
-        noon_time = Time()
-        noon_time.hour = 12
-        noon_time.minute = 0
-        noon_time.second = 0
+def main():
+    # if a movie start at noon...
+    noon_time = Time()
+    noon_time.hour = 12
+    noon_time.minute = 0
+    noon_time.second = 0
         
-        print('Starts at', end=' ')
-        print_time(noon_time)
+    print('Starts at', end=' ')
+    print_time(noon_time)
         
-        # and run time of movie is 109 minutes...
-        movie_minutes = 109
-        run_time = int_to_time(movie_minutes * 60)
-        print('Run time', end=' ')
-        print_time(run_time)
+    # and run time of movie is 109 minutes...
+    movie_minutes = 109
+    run_time = int_to_time(movie_minutes * 60)
+    print('Run time', end=' ')
+    print_time(run_time)
         
-        # what time does the movie end?
-        end_time = add_times(noon_time, run_time)
-        print('Ends at', end=' ')
-        print_time(end_time)
+    # what time does the movie end?
+    end_time = add_times(noon_time, run_time)
+    print('Ends at', end=' ')
+    print_time(end_time)
         
 if __name__ == '__main__':
     main()
