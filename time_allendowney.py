@@ -61,7 +61,7 @@ class Time:
     def main():
         # if a movie start at noon...
         noon_time = Time()
-        noon_time.hour = 12name
+        noon_time.hour = 12
         noon_time.minute = 0
         noon_time.second = 0
         
@@ -81,9 +81,3 @@ class Time:
         
 if __name__ = '__main__':
     main()
-        
-        
-        
-        
-        # Computes the number of seconds since midnight
-        
