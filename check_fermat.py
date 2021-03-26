@@ -2,6 +2,20 @@
 # b**n + c**n = a**n
 # if 'n' is a prime number and 'a' is a positive integer less then 'n'
 # then a**n modulo n = a modulo 'n'.
+
+def is_prime_number():
+    num = int(input('Enter a number:'))
+    if num > 1:
+        for i in range(num):
+            if (num % i) == 0:
+                print(num,'is not a prime number')
+                print(i,'times', num//i, 'is',num)
+                break
+            else:
+                print(num,'it is a prime number')
+    else:
+        print(num,'is not a prime numer')
+
 # n = 2
 # a = 1
 # 1**2 % 2 == 1
@@ -20,11 +34,10 @@
 # 2. Check if a**n % n == a
 # 3. if yes return true
 # 4. if no, return false
-import random
-random.seed()
-rando.randint(1,10)
-
-is_fermat_prime(2,10)
-find_fermat_prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)
-
+# import random
+# random.seed()
+# print(random.randint(1,10))
+# print(is_fermat_prime(2,10))
+# find_fermat_prime([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)
+is_prime_number()
 
