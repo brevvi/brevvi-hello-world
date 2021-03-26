@@ -7,11 +7,15 @@ name = ''
 
 def yourname(name):
     time.sleep(1)
-    name = input('Type your name here:')
+    name = input('Type your name here:\t')
     time.sleep(1)
-    print('Hello','{}.'.format(name), 'How are you?')
+    name = name.title()
+    name = name.lstrip()
+    name = name.rstrip()
+    print('Hello','{}.'.format(name), '\nHow Zen are you?')
     return
 
 print(hello)
 yourname(name)
 
+import this
