@@ -4,6 +4,7 @@
 """
 import time
 
+places = dict([[1,'Sushiland'],[2,'GoVegans'],[3,'TexMexRanch'],[4,'VeryFancyPlace']])
 #girls = ['Jessica Alba','Alexandra Daddario', 'Mary Elizabeth Winstead']
 numb = 0
 
@@ -24,21 +25,28 @@ def checklist():
             print('Presence  confirmed!')
             grlck.insert(numb, grlcklst)
         else:
-            newname = str(input('You do like to suggest a new name:' + '\nNew name: '))
+            newname = str(input('Do you like to suggest a new name:' + '\nNew name: '))
             grlck.insert(numb, newname)
         numb = numb + 1
     girls = grlck.copy()
     return girls
 
+def places4dinner():
+    global places
+    places = dict([[1,'Sushiland'],[2,'GoVegans'],[3,'TexMexRanch'],[4,'VeryFancyPlace']])
+
 def invite():
     numb = 0
     for i in range(len(girls)):
         girl = girls.pop(numb)
-        print('Hi,'+girl+'!''\nDo you like to have a dinner with me?')
+        print('Hi,','{}'.format(girl),'!','\nDo you like to have a dinner with me?')
         answer = str(input('Yes or No?'))
         answer = answer.title()
         if (answer == 'Yes' or answer == 'Y'):
-            print("Great! I'll get you at 7pm! XOXO!")
+            print("Great! Do you like to chosse the place for dinner")
+            print(places)
+            theplace = int(input('Chosse one of the numbers of the list, please: '))
+            print('Great! I meet you in the '+places[theplace]+'at 7pm. XOXO!')
             time.sleep(1)
             break
         else:
