@@ -1,11 +1,12 @@
 #! /usr/bin/env python
 """
     select a people from a list to have a dinner with
+    author: Ricardo de Avia Amaral
+    licence: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 """
 import time
 
 places = dict([[1,'Sushiland'],[2,'GoVegans'],[3,'TexMexRanch'],[4,'VeryFancyPlace']])
-#girls = ['Jessica Alba','Alexandra Daddario', 'Mary Elizabeth Winstead']
 numb = 0
 
 def checklist():
